@@ -1,0 +1,7 @@
+{
+  "kind": "PulzrMapPanel",
+  "spec": {
+    "thresholds": { "defaultColor": "#2e9e6a", "steps": [{ "value": 1, "color": "#d64545" }] },
+    "radius": 7
+  }
+}
