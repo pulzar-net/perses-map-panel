@@ -24,7 +24,6 @@
   "module": "lib/index.js",
   "types": "lib/index.d.ts",
   "dependencies": {
-    "maplibre-gl": "^5.24.0",
     "react-compiler-runtime": "^1.0.0"
   },
   "devDependencies": {
@@ -60,7 +59,8 @@
     "react-router-dom": "^6.30.6",
     "typescript": "^7.0.2",
     "vitest": "^4.1.11",
-    "@types/geojson": "^7946.0.16"
+    "@types/geojson": "^7946.0.16",
+    "maplibre-gl": "^5.24.0"
   },
   "peerDependencies": {
     "@emotion/react": "^11.7.1",
@@ -82,7 +82,8 @@
     "react-dom": "^18.3.0 || ^19.0.0",
     "react-hook-form": "^7.87.0",
     "use-resize-observer": "^10.0.0",
-    "@mui/material": "^6.1.10"
+    "@mui/material": "^6.1.10",
+    "maplibre-gl": "^5.0.0"
   },
   "files": [
     "lib/**/*",

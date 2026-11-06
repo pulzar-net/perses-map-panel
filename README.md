@@ -20,6 +20,8 @@ spec:
 
 The [Pulzr Net datasource](https://github.com/pulzar-net/perses-pulzr-datasource) labels each device's series with its position when a field query has `groupBy: device` and `positions: true`.
 
+MapLibre is a peer dependency, so an app embedding the panel uses its own copy. The plugin archive carries it for Perses servers, as a shared module a host can supply, and fetches it only when a map is first drawn.
+
 ## Install
 
 Put the archive (`PulzrMapPanel-<version>.tar.gz`, from the releases) in a folder listed in the Perses server's `plugin.archive_paths`, or `npm install @pulzr/perses-map-panel` to embed it.

@@ -63,6 +63,8 @@ export default defineConfig({
         'react/jsx-runtime': { requiredVersion: packageJson.peerDependencies.react, singleton: true },
         'react-dom': { requiredVersion: packageJson.peerDependencies['react-dom'], singleton: true },
         echarts: { singleton: true },
+        // A host that already has MapLibre (the Pulzr console does) lends its own.
+        'maplibre-gl': { requiredVersion: packageJson.peerDependencies['maplibre-gl'], singleton: true },
         'date-fns': { singleton: true },
         'date-fns-tz': { singleton: true },
         lodash: { singleton: true },
