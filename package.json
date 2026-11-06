@@ -115,5 +115,8 @@
     "type": "git",
     "url": "git+https://github.com/pulzar-net/perses-map-panel.git"
   },
-  "homepage": "https://github.com/pulzar-net/perses-map-panel#readme"
+  "homepage": "https://github.com/pulzar-net/perses-map-panel#readme",
+  "publishConfig": {
+    "access": "public"
+  }
 }
