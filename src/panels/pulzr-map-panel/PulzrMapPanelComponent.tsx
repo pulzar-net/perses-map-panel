@@ -17,7 +17,11 @@ const SOURCE = 'points';
 
 // MapLibre is most of this plugin's size, so it is fetched when a map is first
 // drawn: a dashboard without one never loads it.
-const loadMapLibre = (): Promise<typeof MapLibre> => import('maplibre-gl');
+// MapLibre ships as UMD, which a bundler may hand over as the module or as its default export.
+const loadMapLibre = async (): Promise<typeof MapLibre> => {
+  const module = await import('maplibre-gl');
+  return (module.default as typeof MapLibre | undefined) ?? module;
+};
 
 export function PulzrMapPanelComponent({ queryResults, spec }: PulzrMapPanelProps): ReactElement {
   const theme = useTheme();
