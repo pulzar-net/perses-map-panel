@@ -1,0 +1,134 @@
+{
+ "$schema": "https://raw.githubusercontent.com/pulzar-net/perses-panel-preview/main/sample.schema.json",
+ "timeRange": {
+  "start": "2026-01-14T00:00:00Z",
+  "end": "2026-01-15T00:00:00Z"
+ },
+ "panel": {
+  "kind": "Panel",
+  "spec": {
+   "display": {
+    "name": "Devices"
+   },
+   "plugin": {
+    "kind": "PulzrMapPanel",
+    "spec": {
+     "styleUrl": "http://preview.invalid/style.json",
+     "thresholds": {
+      "defaultColor": "#2e9e6a",
+      "steps": [
+       {
+        "value": 1,
+        "color": "#d64545"
+       }
+      ]
+     },
+     "format": {
+      "unit": "decimal",
+      "decimalPlaces": 0
+     },
+     "radius": 9
+    }
+   }
+  }
+ },
+ "queries": [
+  {
+   "series": [
+    {
+     "name": "Device 1",
+     "labels": {
+      "latitude": "34.0071",
+      "longitude": "-81.0352"
+     },
+     "points": [
+      0
+     ]
+    },
+    {
+     "name": "Device 2",
+     "labels": {
+      "latitude": "34.0112",
+      "longitude": "-81.0201"
+     },
+     "points": [
+      0
+     ]
+    },
+    {
+     "name": "Device 3",
+     "labels": {
+      "latitude": "33.9968",
+      "longitude": "-81.0486"
+     },
+     "points": [
+      1
+     ]
+    },
+    {
+     "name": "Device 4",
+     "labels": {
+      "latitude": "34.0189",
+      "longitude": "-81.0412"
+     },
+     "points": [
+      0
+     ]
+    },
+    {
+     "name": "Device 5",
+     "labels": {
+      "latitude": "33.9894",
+      "longitude": "-81.0265"
+     },
+     "points": [
+      0
+     ]
+    },
+    {
+     "name": "Device 6",
+     "labels": {
+      "latitude": "34.0035",
+      "longitude": "-81.0089"
+     },
+     "points": [
+      1
+     ]
+    },
+    {
+     "name": "Device 7",
+     "labels": {
+      "latitude": "34.0243",
+      "longitude": "-81.0301"
+     },
+     "points": [
+      0
+     ]
+    },
+    {
+     "name": "Device 8",
+     "labels": {
+      "latitude": "33.9921",
+      "longitude": "-81.0377"
+     },
+     "points": [
+      0
+     ]
+    },
+    {
+     "name": "Device 9",
+     "labels": {
+      "latitude": "34.0152",
+      "longitude": "-81.0568"
+     },
+     "points": [
+      0
+     ]
+    }
+   ]
+  }
+ ],
+ "assets": {
+  "/style.json": "map-style-{theme}.json"
+ }
+}

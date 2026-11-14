@@ -1,5 +1,10 @@
 # Map panel for Perses
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/pulzar-net/perses-map-panel/releases/latest/download/preview-dark.png">
+  <img alt="The PulzrMapPanel: nine devices as colored points on a map, two of them red" src="https://github.com/pulzar-net/perses-map-panel/releases/latest/download/preview-light.png">
+</picture>
+
 `PulzrMapPanel` places each series on a [MapLibre](https://maplibre.org) map at the position in its labels, colored by its last value, with the value on hover. The map fits itself to the points.
 
 ```yaml
